@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "mocha": "8",
+    "nodemon": "^2.0.7",
+    "nyc": "15",
+    "supertest": "6"
+  },
+  "scripts": {
+    "test": "yarn mocha -w --parallel *.test.js",
+    "test:cov": "yarn nyc yarn mocha --parallel *.test.js"
+  }
+}
