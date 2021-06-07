@@ -1,0 +1,19 @@
+{
+  "name": "lesson05-tdd-project-pt01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "seed": "node ./seed",
+    "test": "yarn mocha -w --parallel **/**/*.test.js",
+    "test:cov": "yarn nyc yarn mocha --parallel **/**/*.test.js"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3"
+  },
+  "dependencies": {
+    "mocha": "8",
+    "nyc": "15",
+    "sinon": "9"
+  }
+}
